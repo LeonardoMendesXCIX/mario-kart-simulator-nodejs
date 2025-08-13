@@ -1,0 +1,111 @@
+{
+  "characters": [
+    {
+      "id": "mario",
+      "name": "Mario",
+      "emoji": "🍄",
+      "stats": {
+        "velocidade": 4,
+        "manobrabilidade": 3,
+        "poder": 3
+      },
+      "description": "O encanador mais famoso do mundo! Equilibrado em todas as habilidades.",
+      "specialty": "Versatilidade",
+      "color": "#FF0000"
+    },
+    {
+      "id": "luigi",
+      "name": "Luigi",
+      "emoji": "👻",
+      "stats": {
+        "velocidade": 3,
+        "manobrabilidade": 4,
+        "poder": 4
+      },
+      "description": "Irmão do Mario com excelente manobrabilidade e poder.",
+      "specialty": "Manobrabilidade",
+      "color": "#00AA00"
+    },
+    {
+      "id": "peach",
+      "name": "Peach",
+      "emoji": "👑",
+      "stats": {
+        "velocidade": 3,
+        "manobrabilidade": 4,
+        "poder": 2
+      },
+      "description": "Princesa elegante com ótima técnica de pilotagem.",
+      "specialty": "Técnica",
+      "color": "#FFB6C1"
+    },
+    {
+      "id": "yoshi",
+      "name": "Yoshi",
+      "emoji": "🦕",
+      "stats": {
+        "velocidade": 2,
+        "manobrabilidade": 4,
+        "poder": 3
+      },
+      "description": "Dinossauro amigável com excelente manobrabilidade.",
+      "specialty": "Agilidade",
+      "color": "#32CD32"
+    },
+    {
+      "id": "bowser",
+      "name": "Bowser",
+      "emoji": "🐢",
+      "stats": {
+        "velocidade": 5,
+        "manobrabilidade": 2,
+        "poder": 5
+      },
+      "description": "Rei dos Koopas! Máxima velocidade e poder, mas pouca manobrabilidade.",
+      "specialty": "Força Bruta",
+      "color": "#8B4513"
+    },
+    {
+      "id": "donkey-kong",
+      "name": "Donkey Kong",
+      "emoji": "🦍",
+      "stats": {
+        "velocidade": 2,
+        "manobrabilidade": 2,
+        "poder": 5
+      },
+      "description": "Gorila poderoso com força máxima para confrontos.",
+      "specialty": "Poder",
+      "color": "#8B4513"
+    }
+  ],
+  "powerUps": [
+    {
+      "id": "mushroom",
+      "name": "Super Cogumelo",
+      "emoji": "🍄",
+      "effect": "velocidade",
+      "boost": 2,
+      "duration": 1,
+      "description": "Aumenta a velocidade temporariamente"
+    },
+    {
+      "id": "star",
+      "name": "Super Estrela",
+      "emoji": "⭐",
+      "effect": "invencibilidade",
+      "boost": 3,
+      "duration": 2,
+      "description": "Torna o jogador invencível por algumas rodadas"
+    },
+    {
+      "id": "lightning",
+      "name": "Raio",
+      "emoji": "⚡",
+      "effect": "todos_oponentes",
+      "boost": -1,
+      "duration": 1,
+      "description": "Reduz a velocidade de todos os oponentes"
+    }
+  ]
+}

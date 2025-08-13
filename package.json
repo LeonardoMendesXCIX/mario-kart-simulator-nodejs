@@ -1,0 +1,51 @@
+{
+  "name": "mario-kart-racing-simulator",
+  "version": "1.0.0",
+  "description": "🏁 Simulador de Corrida Mario Kart - Projeto educacional avançado com interface web interativa, sistema de ranking e múltiplas funcionalidades",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "node tests/runTests.js",
+    "lint": "eslint src/",
+    "format": "prettier --write src/ public/js/",
+    "build": "echo 'Build completed successfully!'",
+    "setup": "npm install && echo 'Setup completed! Run npm run dev to start development server'"
+  },
+  "keywords": [
+    "mario-kart",
+    "racing",
+    "simulator",
+    "nodejs",
+    "express",
+    "game",
+    "portfolio",
+    "educational"
+  ],
+  "author": {
+    "name": "Leonardo Mendes",
+    "email": "lbelodasilvamendes@outlook.com",
+    "url": "https://github.com/LeonardoMendesXCIX"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeonardoMendesXCIX/mario-kart-racing-simulator"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "compression": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏁 Mario Kart Racing Simulator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏁</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    🏁 Mario Kart Racing Simulator
+                </h1>
+                <p class="subtitle">
+                    Simulador de corrida interativo com personagens clássicos do Mario Kart
+                </p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Setup Section -->
+            <section id="setup-section" class="section">
+                <div class="section-header">
+                    <h2>🎮 Configurar Corrida</h2>
+                </div>
+
+                <!-- Character Selection -->
+                <div class="selection-group">
+                    <h3>👥 Selecionar Personagens (mín. 2)</h3>
+                    <div id="characters-grid" class="characters-grid">
+                        <!-- Characters will be loaded here -->
+                    </div>
+                    <div class="selected-characters">
+                        <h4>Personagens Selecionados:</h4>
+                        <div id="selected-characters" class="selected-list">
+                            <p class="empty-message">Nenhum personagem selecionado</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Track Selection -->
+                <div class="selection-group">
+                    <h3>🏁 Selecionar Pista</h3>
+                    <div id="tracks-grid" class="tracks-grid">
+                        <!-- Tracks will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button id="create-race-btn" class="btn btn-primary" disabled>
+                        🚀 Criar Corrida
+                    </button>
+                    <button id="simulate-race-btn" class="btn btn-secondary" disabled>
+                        ⚡ Simular Corrida Completa
+                    </button>
+                </div>
+            </section>
+
+            <!-- Race Section -->
+            <section id="race-section" class="section" style="display: none;">
+                <div class="section-header">
+                    <h2>🏁 Corrida em Andamento</h2>
+                    <div class="race-info">
+                        <span id="race-track" class="race-track"></span>
+                        <span id="race-progress" class="race-progress"></span>
+                    </div>
+                </div>
+
+                <!-- Race Controls -->
+                <div class="race-controls">
+                    <button id="next-round-btn" class="btn btn-primary">
+                        🎲 Próxima Rodada
+                    </button>
+                    <button id="reset-race-btn" class="btn btn-secondary">
+                        🔄 Nova Corrida
+                    </button>
+                </div>
+
+                <!-- Current Ranking -->
+                <div class="ranking-section">
+                    <h3>🏆 Ranking Atual</h3>
+                    <div id="current-ranking" class="ranking-list">
+                        <!-- Ranking will be updated here -->
+                    </div>
+                </div>
+
+                <!-- Race Log -->
+                <div class="log-section">
+                    <h3>📝 Log da Corrida</h3>
+                    <div id="race-log" class="race-log">
+                        <!-- Race log will be displayed here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results-section" class="section" style="display: none;">
+                <div class="section-header">
+                    <h2>🏆 Resultado Final</h2>
+                </div>
+
+                <div class="final-results">
+                    <div class="winner-announcement">
+                        <h3 id="winner-text">🥇 Vencedor</h3>
+                    </div>
+
+                    <div class="final-ranking">
+                        <h4>📊 Classificação Final</h4>
+                        <div id="final-ranking" class="ranking-list">
+                            <!-- Final ranking will be displayed here -->
+                        </div>
+                    </div>
+
+                    <div class="race-stats">
+                        <h4>📈 Estatísticas da Corrida</h4>
+                        <div id="race-stats" class="stats-grid">
+                            <!-- Race statistics will be displayed here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="new-race-btn" class="btn btn-primary">
+                        🆕 Nova Corrida
+                    </button>
+                    <button id="view-history-btn" class="btn btn-secondary">
+                        📚 Ver Histórico
+                    </button>
+                </div>
+            </section>
+
+            <!-- History Section -->
+            <section id="history-section" class="section" style="display: none;">
+                <div class="section-header">
+                    <h2>📚 Histórico de Corridas</h2>
+                </div>
+
+                <div id="race-history" class="history-list">
+                    <!-- Race history will be displayed here -->
+                </div>
+
+                <div class="action-buttons">
+                    <button id="back-to-setup-btn" class="btn btn-primary">
+                        🔙 Voltar ao Início
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>
+                    🎮 Desenvolvido por <strong>Leonardo Mendes</strong> | 
+                    📧 <a href="mailto:lbelodasilvamendes@outlook.com">lbelodasilvamendes@outlook.com</a> |
+                    🐙 <a href="https://github.com/LeonardoMendesXCIX" target="_blank">GitHub</a>
+                </p>
+                <p class="version">v1.0.0 - Projeto Educacional DIO</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay" style="display: none;">
+        <div class="loading-content">
+            <div class="loading-spinner">🏎️</div>
+            <p>Carregando...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>

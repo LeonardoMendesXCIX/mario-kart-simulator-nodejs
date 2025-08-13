@@ -1,0 +1,36 @@
+{
+  "tracks": [
+    {
+      "id": "mario-circuit",
+      "name": "Circuito do Mario",
+      "emoji": "🏁",
+      "difficulty": "Fácil",
+      "laps": 5,
+      "description": "Pista clássica perfeita para iniciantes",
+      "blocks": [
+        { "type": "RETA", "probability": 0.4 },
+        { "type": "CURVA", "probability": 0.4 },
+        { "type": "CONFRONTO", "probability": 0.2 }
+      ],
+      "specialFeatures": ["power-ups", "boost-pads"],
+      "environment": "grassland",
+      "color": "#90EE90"
+    },
+    {
+      "id": "rainbow-road",
+      "name": "Estrada Arco-Íris",
+      "emoji": "🌈",
+      "difficulty": "Difícil",
+      "laps": 3,
+      "description": "A pista mais desafiadora no espaço!",
+      "blocks": [
+        { "type": "RETA", "probability": 0.2 },
+        { "type": "CURVA", "probability": 0.5 },
+        { "type": "CONFRONTO", "probability": 0.3 }
+      ],
+      "specialFeatures": ["no-barriers", "space-jumps", "star-boost"],
+      "environment": "space",
+      "color": "#9370DB"
+    }
+  ]
+}
